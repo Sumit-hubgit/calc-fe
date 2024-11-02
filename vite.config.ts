@@ -11,8 +11,9 @@ export default defineConfig({
     },
   },
   server: {
-    port: '0.0.0.0', // Set your desired port here
-    strictPort: true, // Fails if the port is already in use
+    host: '0.0.0.0', // Listen on all interfaces
+    port: 3000, // Use a number for the port
+    strictPort: true, // Fail if the port is already in use
   },
 });
 
